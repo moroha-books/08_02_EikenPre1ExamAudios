@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第1回 Part 1 | 英検準1級 本番形式 模擬試験 5回分</title>
+<meta name="description" content="第1回 Part 1の音声を再生します。">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+<p class="book"><a href="index.html">英検準1級 本番形式 模擬試験 5回分【リスニング音声】</a></p>
+<h1>第1回 リスニング Part 1</h1>
+<p class="sub">対話 No. 1〜12</p>
+<section class="card player" aria-label="音声プレーヤー">
+  <span class="badge">第1回</span>
+  <div><button id="play" class="play" type="button" aria-label="再生"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button></div>
+  <p id="state" class="state" aria-live="polite">ボタンを押すと再生が始まります</p>
+  <audio id="audio" data-id="pre1_r1_1_part1" preload="metadata" src="mp3/pre1_r1_1_part1.mp3"></audio>
+  <input id="seek" class="seek" type="range" min="0" max="0" step="1" value="0" aria-label="再生位置">
+  <div class="times"><span id="cur">0:00</span><span id="dur">--:--</span></div>
+  <div class="row">
+    <button id="back" class="btn" type="button">⟲ 10秒戻る</button>
+    <button id="fwd" class="btn" type="button">10秒進む ⟳</button>
+  </div>
+  <div class="speed"><label for="speed">再生速度</label>
+    <select id="speed">
+      <option value="0.8">0.8倍</option><option value="0.9">0.9倍</option>
+      <option value="1" selected>1.0倍 (本番と同じ)</option>
+      <option value="1.1">1.1倍</option><option value="1.2">1.2倍</option>
+    </select></div>
+  <div id="resume" class="resume">前回は <b id="resumeAt"></b> まで聞きました。
+    <button id="resumeYes" class="btn" type="button">続きから再生</button>
+    <button id="resumeNo" class="btn" type="button">最初から</button></div>
+  <div id="error" class="error" role="alert">音声を読み込めませんでした。通信環境を確認して、ページを再読み込みしてください。
+    解決しない場合は、<a href="mp3/pre1_r1_1_part1.mp3">こちら</a>から直接開いてください。</div>
+  <div class="tips"><b>このトラックについて</b><ul><li>12の対話と質問が流れます。質問のあとに10秒の解答時間があります。</li><li>本の選択肢を見ながら、止めずに最後まで通して聞きましょう。</li></ul></div>
+</section>
+<nav class="nav" aria-label="トラック移動"><a class="btn" href="pre1_r1_0_directions.html">← 第1回 リスニングテストの説明</a><a class="btn" href="pre1_r1_2_part2.html">第1回 Part 2 →</a></nav>
+<p class="row"><a class="btn" href="index.html">☰ トラック一覧</a></p>
+<script src="player.js"></script>
+<footer>本書の音声の無断転載・複製・配布を禁じます。<br>英検®は、公益財団法人 日本英語検定協会の登録商標です。<br>このコンテンツは、公益財団法人 日本英語検定協会の承認や推奨、その他の検討を受けたものではありません。</footer>
+</main>
+</body>
+</html>
